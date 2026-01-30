@@ -1,0 +1,22 @@
+# SPDX-License-Identifier: Apache-2.0
+# Containerfile template for RAG images
+
+# Set the RAG image name to be used in the labels
+ARG RAG_IMAGE_NAME=PLACEHOLDER
+
+# Base image
+FROM registry.access.redhat.com/ubi9/ubi-minimal:latest
+
+# Add your custom labels here
+LABEL description="Lightspeed BYOK RAG Database Image for ${RAG_IMAGE_NAME}"
+LABEL io.k8s.description="Lightspeed BYOK RAG Database Image for ${RAG_IMAGE_NAME}"
+LABEL io.k8s.display-name="Lightspeed BYOK RAG Database Image for ${RAG_IMAGE_NAME}"
+LABEL summary="Lightspeed BYOK RAG Database Image for ${RAG_IMAGE_NAME}"
+LABEL version="0.0.1"
+LABEL name=${RAG_IMAGE_NAME}
+
+# Copy the RAG database from the extracted BYOK-generated amd64 image
+COPY rag-db-extract/rag /rag/
+
+# Set working directory
+WORKDIR /rag
