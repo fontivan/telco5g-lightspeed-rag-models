@@ -18,7 +18,7 @@ VENV := $(ROOT_DIR)/venv
 BIN := $(VENV)/bin
 
 # List of operator subprojects
-SUBPROJECTS := placeholder
+SUBPROJECTS := platform-resource-usage
 
 # RAG configuration variables (can be overridden via command line)
 # TARGET_PLATFORM defaults to linux, can be overridden (e.g., linux, windows)
