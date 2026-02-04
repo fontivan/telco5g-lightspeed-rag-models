@@ -8,11 +8,11 @@ This guide describes how to measure platform utilization on a running cluster, c
 
 The agent answers questions such as:
 
-- **"Are there any platform CPU usage anomalies over the past hour?"**
-- **"Are there any platform memory usage anomalies over the past hour?"**
-- **"Does the aggregate traffic on the primary node interface exceed the engineering guidelines over the past hour?"**
-- **"Does my logging rate over the past hour exceed the engineering guidelines?"**
-- **"Are there any platform resource usage anomalies over the past hour?"** (combination of all checks)
+- "Are there any platform CPU usage anomalies over the past hour?"
+- "Are there any platform memory usage anomalies over the past hour?"
+- "Does the aggregate traffic on the primary node interface exceed the engineering guidelines over the past hour?"
+- "Does my logging rate over the past hour exceed the engineering guidelines?"
+- "Are there any platform resource usage anomalies over the past hour?" (combination of all checks)
 
 ---
 
